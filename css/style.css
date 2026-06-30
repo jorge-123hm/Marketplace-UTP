@@ -1,0 +1,54 @@
+.navbar {
+  background: #c8102e;
+}
+.navbar .navbar-brand {
+  color: #ffffff;
+  font-weight: bold;
+}
+.navbar .nav-link {
+  color: #ffffff;
+}
+.navbar .nav-link:hover {
+  color: yellow;
+}
+
+body {
+  background: #f8f9fa;
+  font-family: Arial, sans-serif;
+}
+
+section {
+  padding: 40px 0;
+}
+
+.card {
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  transition: 0.3s;
+}
+.card:hover {
+  transform: scale(1.03);
+}
+.card img {
+  height: 250px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.card-body h5 {
+  font-weight: bold;
+}
+.card-body p {
+  color: green;
+  font-size: 18px;
+}
+.card-body .btn {
+  width: 100%;
+}
+
+footer {
+  background: #212529;
+  color: #ffffff;
+  text-align: center;
+  padding: 20px;
+}

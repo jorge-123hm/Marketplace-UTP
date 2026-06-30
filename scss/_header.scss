@@ -1,0 +1,14 @@
+@import "variables";
+.navbar{
+    background: $color-principal;
+    .navbar-brand{
+        color: $color-blanco;
+        font-weight: bold;
+    }
+    .nav-link{
+        color: $color-blanco;
+        &:hover{
+            color: yellow;
+        }
+    }
+}

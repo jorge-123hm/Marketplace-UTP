@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Detalle del Libro</title>
+    <!-- Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<!-- barra de navegacion -->
+<nav class="navbar navbar-expand-lg navbar-dark bg-danger">
+    <div class="container">
+        <a class="navbar-brand" href="index.html">📚 UTP Books</a>
+        <button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#menu">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="menu">
+            <ul class="navbar-nav ms-auto">
+                <li class="nav-item"><a class="nav-link" href="index.html">Inicio</a></li>
+                <li class="nav-item"><a class="nav-link" href="productos.html">Libros</a></li>
+                <li class="nav-item"><a class="nav-link active" href="detalle.html">Detalle</a></li>
+                <li class="nav-item"><a class="nav-link" href="contacto.html">Contacto</a></li>
+            </ul>
+        </div>
+    </div>
+</nav>
+<!-- Detalle del libro -->
+<section class="container py-5">
+    <div class="row">
+        <div class="col-md-5">
+            <img src="img/java.jpg" class="img-fluid rounded shadow" alt="Libro">
+        </div>
+        <div class="col-md-7">
+            <h2>Java Fundamentos</h2>
+            <h4 class="text-success">S/ 60.00</h4>
+            <p>
+                Libro ideal para estudiantes que desean aprender programación
+                orientada a objetos con Java desde cero.
+            </p>
+            <ul class="list-group mb-3">
+                <li class="list-group-item"><strong>Estado:</strong> Usado</li>
+                <li class="list-group-item"><strong>Autor:</strong> Deitel</li>
+                <li class="list-group-item"><strong>Categoria:</strong> Programacion</li>
+            </ul>
+            <a href="#" class="btn btn-danger">
+                Solicitar Intercambio
+            </a>
+            <a href="productos.html" class="btn btn-secondary">
+                Volver
+            </a>
+        </div>
+    </div>
+</section>
+<!-- Footer -->
+<footer class="bg-dark text-white text-center p-3">
+    <p>© 2026 UTP Books Marketplace</p>
+</footer>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
