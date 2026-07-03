@@ -31,7 +31,8 @@ section {
 }
 .card img {
   height: 250px;
-  object-fit: cover;
+  object-fit: contain;
+  padding:10px;
 }
 
 .card-body h5 {
