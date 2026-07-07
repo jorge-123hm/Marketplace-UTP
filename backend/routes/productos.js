@@ -8,6 +8,7 @@ const {
     obtenerProductosCarrito
 } = require("../controllers/productoController");
 
+router.post("/destacados", obtenerProductosCarrito);
 router.post("/carrito", obtenerProductosCarrito);
 router.get("/", obtenerProductos);
 router.get("/:id", obtenerProductoPorId);
