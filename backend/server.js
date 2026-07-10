@@ -13,6 +13,7 @@ conectarDB();
 // Middleware
 app.use(cors());
 app.use(express.json());
+app.use("/img", express.static("img"));
 
 // Rutas
 app.use("/api/productos", require("./routes/productos"));

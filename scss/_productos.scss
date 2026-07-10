@@ -11,3 +11,37 @@
         width:100%;
     }
 }
+
+@keyframes aparecerProducto {
+    from {
+        opacity: 0;
+        -webkit-transform: translateY(20px) scale(0.95);
+        -ms-transform: translateY(20px) scale(0.95);
+        transform: translateY(20px) scale(0.95);
+    }
+    to {
+        opacity: 1;
+        -webkit-transform: translateY(0) scale(1);
+        -ms-transform: translateY(0) scale(1);
+        transform: translateY(0) scale(1);
+    }
+}
+
+@-webkit-keyframes aparecerProducto {
+    from {
+        opacity: 0;
+        -webkit-transform: translateY(20px) scale(0.95);
+        transform: translateY(20px) scale(0.95);
+    }
+    to {
+        opacity: 1;
+        -webkit-transform: translateY(0) scale(1);
+        transform: translateY(0) scale(1);
+    }
+}
+
+.animar-producto {
+    opacity: 0;
+    animation: aparecerProducto .5s ease forwards;
+    -webkit-animation: aparecerProducto .5s ease forwards;
+}
