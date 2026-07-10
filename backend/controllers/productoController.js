@@ -54,8 +54,23 @@ const obtenerProductosCarrito = async (req, res) => {
 
 };
 
+const obtenerProductosPorCategoria = async (req, res) => {
+    try {
+        const categoria = req.params.categoria;
+        const productos = await Producto.find({
+            categoria: categoria
+        });
+        res.json(productos);
+    } catch (error) {
+        res.status(500).json({
+            mensaje: "Error al obtener productos"
+        });
+    }
+};
+
 module.exports = {
     obtenerProductos,
     obtenerProductoPorId,
-    obtenerProductosCarrito
+    obtenerProductosCarrito,
+    obtenerProductosPorCategoria
 };
